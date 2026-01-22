@@ -5,12 +5,12 @@ public class Problem_3 {
     public int add(int a, int b){
         return a+b;
     }
-    public int isEven(int a){
+    public boolean isEven(int a){
         if(a%2==0){
-            return 1;
+            return true;
         }
         else{
-            return 0;
+            return false;
         }
     }
     public int findFactorial(int a){
