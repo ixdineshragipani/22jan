@@ -1,0 +1,12 @@
+100,Dinesh,23
+101,Raju,12
+102,Ramu,39
+103,Somu,19
+104,Innovatech,32
+105,TSME,90
+100,Dinesh,23
+107,Dinesh,33
+108,Ramu,39
+109,Vignesh,29
+110,Abhilash,29
+111,Gnanandham,
