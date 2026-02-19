@@ -1,0 +1,206 @@
+Driver Picking & Scheduling Module.
+Core Idea 
+--Manages pickup scheduling and driver assignments. 
+Constraints.
+1.One pickup request can include multiple shipments. 
+2.One driver can have multiple pickups per day. 
+3.Pickup time changes must be saved (not overwritten). 
+4.Pickup can be reassigned to another driver. 
+5.Planned time and actual pickup time must both be stored. 
+6.Pickup cancellation must keep history. 
+ 
+
+
+=========================================================================================================================
+
+
+driver_db{
+    driver_details
+    driver_account_details
+    vehicle_details
+    pickup_request
+    driver_location_history
+    shipment_details
+    pickup_driver_assignment
+    pickup_status_history
+    delivery_details
+    payment_details
+
+}
+
+-------------------------------------------------------------------------------------------------------------------------
+
+
+driver_details{
+    driver_id(PK)
+    driver_name
+    driver_address
+    driver_license
+    driver_rc
+    driver_phone_number
+    driver_email
+    driver_rating
+    number_of_rides
+    driver_status
+    first_Activation_Timestamp
+    last_completed_trip_Timestamp
+}
+
+
+
+---------------------------------------------------------------
+
+driver_account_details{
+    driver_account_id (PK)
+    driver_id(FK)
+    driver_upi_id(PK)
+    driver_pan_number
+    driver_aadhar_number
+}
+
+
+
+
+----------------------------------------------------------------
+
+vehicle_details{
+    vehicle_id (PK)
+    driver_id (FK)
+    vehicle_name
+    vehicle_number
+    vehicle_insurence
+}
+
+----------------------------------------------------------------
+
+
+pickup_request {
+  pickup_id bigint [primary key]
+  customer_id bigint
+  pickup_latitude decimal(10, 8)
+  pickup_longitude decimal(10,8)
+  pickup_contact
+  pickup_contact_name
+  city
+  state
+  postal_code
+  actual_pickup_time
+  expected_pickup_time
+  current_status(SCHEDULED / ASSIGNED / IN_PROGRESS / COMPLETED / CANCELLED)
+  created_at timestamp
+  updated_at timestamp
+}
+
+----------------------------------------------------------------
+
+
+driver_location_history{
+  location_id(PK)
+  driver_id  (FK)
+  latitude
+  longitude
+  recorded_at
+}
+
+----------------------------------------------------------------
+
+
+shipment_details {
+  shipment_id bigint [primary key]
+  pickup_id bigint
+  shipment_weight decimal
+  shipment_type varchar
+  shipment_status varchar
+}
+
+----------------------------------------------------------------
+
+pickup_driver_assignment {
+  assignment_id bigint [primary key]
+  pickup_id bigint
+  driver_id bigint
+  assigned_at timestamp
+  unassigned_at timestamp
+  assignment_status varchar
+}
+
+
+----------------------------------------------------------------
+
+
+pickup_status_history {
+  status_id bigint [primary key]
+  pickup_id bigint
+  status varchar
+  old_status
+  new_status
+  changed_at timestamp
+  changed_by varchar
+}
+  
+-------------------------------------------------------------------
+
+delivery_details{ 
+  delivery_id bigint [primary key]
+  driver_id
+  customer_id bigint
+  delivery_address varchar
+  delivery_latitude decimal(10, 8)
+  delivery_longitude decimal(10,8)
+  delivery_contact
+  delivery_contact_name
+  city
+  state
+  postal_code
+  created_at timestamp
+  updated_at timestamp
+}
+
+
+--------------------------------------------------------------------
+
+
+payment_details{
+    transaction_id(PK)
+    driver_id
+    customer_id
+    payment_status
+}
+
+
+
+
+===================================================================================================================================================
+
+Customer_db{
+    customer_details
+    customer_location_history
+}
+
+
+-----------------------------------------------
+
+customer_details{
+    customer_id (PK)
+    customer_name
+    customer_address
+    customer_phone_number
+    customer_email
+    created_at
+    updated_at
+    status (ACTIVE / INACTIVE)
+}
+
+
+------------------------------------------------
+
+
+customer_location_history{
+    location_id (PK)
+    customer_id (FK)
+    latitude
+    longitude
+    recorded_at
+}
+
+

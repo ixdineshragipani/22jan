@@ -1,0 +1,209 @@
+insert into customer_details values
+(201,'Tech Park','Hyderabad',8000000001,'tech@gmail.com','2026-01-01','2026-01-01','ACTIVE'),
+(202,'Global Traders','Bangalore',8000000002,'global@gmail.com','2026-01-02','2026-01-02','ACTIVE'),
+(203,'Fresh Mart','Chennai',8000000003,'fresh@gmail.com','2026-01-03','2026-01-03','ACTIVE'),
+(204,'Mega Stores','Mumbai',8000000004,'mega@gmail.com','2026-01-04','2026-01-04','ACTIVE'),
+(205,'Daily Needs','Delhi',8000000005,'daily@gmail.com','2026-01-05','2026-01-05','ACTIVE'),
+(206,'Green Foods','Pune',8000000006,'green@gmail.com','2026-01-06','2026-01-06','ACTIVE'),
+(207,'City Mall','Kolkata',8000000007,'city@gmail.com','2026-01-07','2026-01-07','ACTIVE'),
+(208,'Smart Retail','Jaipur',8000000008,'smart@gmail.com','2026-01-08','2026-01-08','ACTIVE'),
+(209,'Express Ltd','Lucknow',8000000009,'express@gmail.com','2026-01-09','2026-01-09','ACTIVE'),
+(210,'Urban Corp','Ahmedabad',8000000010,'urban@gmail.com','2026-01-10','2026-01-10','ACTIVE');
+
+
+insert into customer_location_history(customer_location_id,customer_id,latitude,longitude) values
+(301,201,17.3850,78.4867),
+(302,202,12.9716,77.5946),
+(303,203,13.0827,80.2707),
+(304,204,19.0760,72.8777),
+(305,205,28.6139,77.2090),
+(306,206,18.5204,73.8567),
+(307,207,22.5726,88.3639),
+(308,208,26.9124,75.7873),
+(309,209,26.8467,80.9462),
+(310,210,23.0225,72.5714);
+
+
+insert into driver_details values
+(101,'Ravi','Hyderabad','DL101','RC101',9000000001,'ravi@gmail.com',04.80,'ACTIVE'),
+(102,'Arjun','Bangalore','DL102','RC102',9000000002,'arjun@gmail.com',04.60,'ACTIVE'),
+(103,'Manoj','Chennai','DL103','RC103',9000000003,'manoj@gmail.com',04.70,'ACTIVE'),
+(104,'Kiran','Mumbai','DL104','RC104',9000000004,'kiran@gmail.com',04.50,'ACTIVE'),
+(105,'Vikram','Delhi','DL105','RC105',9000000005,'vikram@gmail.com',04.90,'ACTIVE'),
+(106,'Suresh','Pune','DL106','RC106',9000000006,'suresh@gmail.com',04.40,'ACTIVE'),
+(107,'Ramesh','Kolkata','DL107','RC107',9000000007,'ramesh@gmail.com',04.30,'ACTIVE'),
+(108,'Ajay','Jaipur','DL108','RC108',9000000008,'ajay@gmail.com',04.60,'ACTIVE'),
+(109,'Deepak','Lucknow','DL109','RC109',9000000009,'deepak@gmail.com',04.50,'ACTIVE'),
+(110,'Prakash','Ahmedabad','DL110','RC110',9000000010,'prakash@gmail.com',04.70,'ACTIVE');
+
+insert into driver_location_history values
+(1, 101, 17.38500000, 78.48670000, 
+ '2026-02-18 08:10:00', '2026-02-18 08:00:00', '2026-02-18 10:30:00'),
+
+(2, 102, 12.97160000, 77.59460000, 
+ '2026-02-18 08:20:00', '2026-02-18 08:05:00', '2026-02-18 11:00:00'),
+
+(3, 103, 13.08270000, 80.27070000, 
+ '2026-02-18 09:00:00', '2026-02-18 08:45:00', '2026-02-18 12:15:00'),
+
+(4, 104, 19.07600000, 72.87770000, 
+ '2026-02-18 09:30:00', '2026-02-18 09:00:00', '2026-02-18 13:00:00'),
+
+(5, 105, 28.61390000, 77.20900000, 
+ '2026-02-19 08:15:00', '2026-02-19 08:00:00', '2026-02-19 10:45:00'),
+
+(6, 106, 18.52040000, 73.85670000, 
+ '2026-02-19 09:00:00', '2026-02-19 08:30:00', '2026-02-19 12:30:00'),
+
+(7, 107, 22.57260000, 88.36390000, 
+ '2026-02-19 10:00:00', '2026-02-19 09:30:00', '2026-02-19 14:00:00'),
+
+(8, 108, 26.91240000, 75.78730000, 
+ '2026-02-20 07:45:00', '2026-02-20 07:30:00', '2026-02-20 09:15:00'),
+
+(9, 109, 26.84670000, 80.94620000, 
+ '2026-02-20 08:30:00', '2026-02-20 08:00:00', '2026-02-20 11:50:00'),
+
+(10,110, 23.02250000, 72.57140000, 
+ '2026-02-20 09:10:00', '2026-02-20 08:45:00', '2026-02-20 13:20:00');
+
+
+
+insert into driver_account_details values
+(401,101,111111,'PAN101',7000000001),
+(402,102,222222,'PAN102',7000000002),
+(403,103,333333,'PAN103',7000000003),
+(404,104,444444,'PAN104',7000000004),
+(405,105,555555,'PAN105',7000000005),
+(406,106,666666,'PAN106',7000000006),
+(407,107,777777,'PAN107',7000000007),
+(408,108,888888,'PAN108',7000000008),
+(409,109,999999,'PAN109',7000000009),
+(410,110,121212,'PAN110',7000000010);
+
+
+insert into vehicle_details values
+(501,101,'Tata Ace',123456,900001),
+(502,102,'Mahindra Pickup',123457,900002),
+(503,103,'Ashok Leyland',123458,900003),
+(504,104,'Eicher Truck',123459,900004),
+(505,105,'Bolero Pickup',123460,900005),
+(506,106,'Tata 407',123461,900006),
+(507,107,'Mini Truck',123462,900007),
+(508,108,'Tata Ace Gold',123463,900008),
+(509,109,'Mahindra Jeeto',123464,900009),
+(510,110,'Isuzu Dmax',123465,900010);
+
+
+insert into pickup_request(pickup_id,customer_id,pickup_latitude,pickup_longitude,pickup_contact,pickup_contact_name,
+	pickup_city,
+	pickup_state,
+	postal_code ,
+	expected_pickup_time,
+	current_status, --(SCHEDULED / ASSIGNED / IN_PROGRESS / COMPLETED / CANCELLED)
+	pickup_created_at,
+	pickup_updated_at )
+values
+(601,201,17.38,78.48,7000000001,'R1','Hyderabad','TS',500001,'2026-02-18 10:00:00','COMPLETED','2026-02-18 08:00:00','2026-02-18 10:30:00'),
+(602,202,12.97,77.59,7000000002,'R2','Bangalore','KA',560001,'2026-02-18 11:00:00','COMPLETED','2026-02-18 08:30:00','2026-02-18 11:00:00'),
+(603,203,13.08,80.27,7000000003,'R3','Chennai','TN',600001,'2026-02-18 12:00:00','CANCELLED','2026-02-18 09:00:00','2026-02-18 11:00:00'),
+(604,204,19.07,72.87,7000000004,'R4','Mumbai','MH',400001,'2026-02-18 09:30:00','COMPLETED','2026-02-18 07:30:00','2026-02-18 09:45:00'),
+(605,205,28.61,77.20,7000000005,'R5','Delhi','DL',110001,'2026-02-19 10:00:00','COMPLETED','2026-02-19 08:00:00','2026-02-19 10:15:00'),
+(606,206,18.52,73.85,7000000006,'R6','Pune','MH',411001,'2026-02-19 12:00:00','COMPLETED','2026-02-19 09:00:00','2026-02-19 12:30:00'),
+(607,207,22.57,88.36,7000000007,'R7','Kolkata','WB',700001,'2026-02-19 14:00:00','CANCELLED','2026-02-19 10:00:00','2026-02-19 13:00:00'),
+(608,208,26.91,75.78,7000000008,'R8','Jaipur','RJ',302001,'2026-02-20 09:00:00','COMPLETED','2026-02-20 07:00:00','2026-02-20 09:10:00'),
+(609,209,26.84,80.94,7000000009,'R9','Lucknow','UP',226001,'2026-02-20 11:30:00','COMPLETED','2026-02-20 08:30:00','2026-02-20 11:45:00'),
+(610,210,23.02,72.57,7000000010,'R10','Ahmedabad','GJ',380001,'2026-02-20 13:00:00','COMPLETED','2026-02-20 09:30:00','2026-02-20 13:30:00');
+
+
+insert into shipment_details values
+(701,601,10,'Electronics','DELIVERED'),
+(702,601,5,'Documents','DELIVERED'),
+(703,602,7,'Clothing','DELIVERED'),
+(704,603,12,'Furniture','CANCELLED'),
+(705,604,15,'Machinery','DELIVERED'),
+(706,605,9,'Groceries','DELIVERED'),
+(707,606,6,'Food','DELIVERED'),
+(708,607,20,'Equipment','CANCELLED'),
+(709,608,11,'Books','DELIVERED'),
+(710,609,14,'Hardware','DELIVERED'),
+(711,610,8,'Accessories','DELIVERED');
+
+
+insert into pickup_driver_assignment values
+(801,601,101,'2026-02-18 08:00:00','2026-02-18 09:00:00','UNASSIGNED'),
+(802,601,102,'2026-02-18 09:05:00',NULL,'ASSIGNED'),
+
+(803,602,101,'2026-02-18 09:30:00',NULL,'ASSIGNED'),
+(804,603,103,'2026-02-18 10:30:00',NULL,'ASSIGNED'),
+(805,604,104,'2026-02-18 08:30:00',NULL,'ASSIGNED'),
+
+(806,605,105,'2026-02-19 08:00:00','2026-02-19 09:00:00','UNASSIGNED'),
+(807,605,106,'2026-02-19 09:05:00',NULL,'ASSIGNED'),
+
+(808,606,101,'2026-02-19 10:00:00',NULL,'ASSIGNED'),
+(809,607,107,'2026-02-19 12:00:00',NULL,'ASSIGNED'),
+
+(810,608,108,'2026-02-20 08:30:00',NULL,'ASSIGNED'),
+(811,609,109,'2026-02-20 10:30:00',NULL,'ASSIGNED'),
+(812,610,110,'2026-02-20 12:00:00',NULL,'ASSIGNED');
+
+
+insert into pickup_status_history (
+status_id ,
+	pickup_id ,
+	pickup_status,
+	old_status ,
+	new_status ,
+	changed_by 
+)
+values
+(901,601,'STATUS','SCHEDULED','ASSIGNED','SYSTEM'),
+(902,601,'STATUS','ASSIGNED','COMPLETED','SYSTEM'),
+(903,603,'STATUS','ASSIGNED','CANCELLED','ADMIN'),
+(904,605,'STATUS','SCHEDULED','ASSIGNED','SYSTEM'),
+(905,605,'STATUS','ASSIGNED','COMPLETED','SYSTEM'),
+(906,607,'STATUS','ASSIGNED','CANCELLED','ADMIN'),
+(907,608,'STATUS','ASSIGNED','COMPLETED','SYSTEM'),
+(908,609,'STATUS','ASSIGNED','COMPLETED','SYSTEM'),
+(909,610,'STATUS','ASSIGNED','COMPLETED','SYSTEM'),
+(910,606,'STATUS','ASSIGNED','COMPLETED','SYSTEM');
+
+
+insert into delivery_details(
+delivery_id,
+	driver_id,
+	customer_id,
+	delivery_address ,
+	delivery_latitude ,
+	delivery_longitude ,
+	delivery_contact ,
+	delivery_contact_name ,
+	delivery_city,
+	deliery_state ,
+	postal_code ,
+	delivery_created_at )
+values
+(1001,102,201,'Hyderabad Warehouse',17.39,78.48,8880000001,'D1','Hyderabad','TS',500101,'2026-02-18 11:00:00'),
+(1002,101,202,'Bangalore Hub',12.97,77.59,8880000002,'D2','Bangalore','KA',560101,'2026-02-18 12:00:00'),
+(1003,104,204,'Mumbai Hub',19.07,72.87,8880000003,'D3','Mumbai','MH',400101,'2026-02-18 10:00:00'),
+(1004,106,205,'Delhi Hub',28.61,77.20,8880000004,'D4','Delhi','DL',110101,'2026-02-19 11:00:00'),
+(1005,101,206,'Pune Hub',18.52,73.85,8880000005,'D5','Pune','MH',411101,'2026-02-19 13:00:00'),
+(1006,108,208,'Jaipur Hub',26.91,75.78,8880000006,'D6','Jaipur','RJ',302101,'2026-02-20 10:00:00'),
+(1007,109,209,'Lucknow Hub',26.84,80.94,8880000007,'D7','Lucknow','UP',226101,'2026-02-20 12:00:00'),
+(1008,110,210,'Ahmedabad Hub',23.02,72.57,8880000008,'D8','Ahmedabad','GJ',380101,'2026-02-20 14:00:00'),
+(1009,103,203,'Chennai Hub',13.08,80.27,8880000009,'D9','Chennai','TN',600101,'2026-02-18 13:00:00'),
+(1010,107,207,'Kolkata Hub',22.57,88.36,8880000010,'D10','Kolkata','WB',700101,'2026-02-19 15:00:00');
+
+
+insert into payment_details values
+('TXN001',102,201,'SUCCESS'),
+('TXN002',101,202,'SUCCESS'),
+('TXN003',104,204,'SUCCESS'),
+('TXN004',106,205,'SUCCESS'),
+('TXN005',101,206,'SUCCESS'),
+('TXN006',108,208,'SUCCESS'),
+('TXN007',109,209,'SUCCESS'),
+('TXN008',110,210,'SUCCESS'),
+('TXN009',103,203,'FAILED'),
+('TXN010',107,207,'FAILED');
